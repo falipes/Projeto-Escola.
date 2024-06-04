@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    overflow: hidden; 
+}
+
+header{
+    background-color: #150d27;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.felopis{
+    width: 2vw;
+    margin-right: 10px;
+}
+
+header > span{
+    color: #efc136;
+    width: 100%;
+    max-width: 1450px;
+    font-size: 24px;
+
+}
+
+
+h2{
+    color: #efc136;
+    font-weight: 400;
+}
+
+h2 > span{
+    font-weight: 700;
+    text-shadow: 1px 2px 3px #826717;
+}
+
+
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/a.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 3vh;
+    color:#efc136;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-image: url(./assets/vamo\ testar.png);
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #efc136;
+    font-weight: 800;
+    margin:0;
+    font-weight: bold;
+}
+
+.card-login > p {
+    color: #efc136;
+}
+
+
+.textfield{
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #d1cbdd;
+    color: 150d27;
+    font-size: 12pt;
+    box-shadow: 0 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.textfield > label {
+    color: #efc136;
+    margin-bottom: 10px;
+}
+
+.textfield >input::placeholder{
+    color: #150d27;
+}
+
+.btn-login{
+    border: 1px solid #efc136;
+    width: 50%;
+    padding: 16px 0px;
+    margin: 25px;
+    border-radius: 20px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #150d27;
+    background: #efc136;
+    cursor: pointer;
+    box-shadow: 0px 10px 50px -12px #826717;
+    transition: 400ms;
+}
+
+.btn-login:hover{
+    color: #efc136;
+    background-color: #150d27;
+}
+
+
+
+.left-login{
+    width: 27vw;
+}
+
+
+@media only screen and (max-widht: 950px){
+    .card-login{
+        width: 85%
+    }
+}
+
+@media only screen and (max-widht: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+}
